@@ -14,13 +14,13 @@
 		543B2BCC24CE844300E4B8D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543B2BCB24CE844300E4B8D5 /* Assets.xcassets */; };
 		543B2BCF24CE844300E4B8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543B2BCD24CE844300E4B8D5 /* LaunchScreen.storyboard */; };
 		543B2BE024CE979100E4B8D5 /* logic.h in Headers */ = {isa = PBXBuildFile; fileRef = 543B2BDE24CE979100E4B8D5 /* logic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		543B2BE324CE979100E4B8D5 /* logic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B2BDC24CE979100E4B8D5 /* logic.framework */; };
-		543B2BE424CE979100E4B8D5 /* logic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543B2BDC24CE979100E4B8D5 /* logic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		543B2BEA24CE9AE400E4B8D5 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2BE924CE9AE400E4B8D5 /* Calculator.swift */; };
+		543B2C9D24D1A24900E4B8D5 /* logic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B2BDC24CE979100E4B8D5 /* logic.framework */; };
+		543B2C9E24D1A24900E4B8D5 /* logic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543B2BDC24CE979100E4B8D5 /* logic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		543B2BE124CE979100E4B8D5 /* PBXContainerItemProxy */ = {
+		543B2C9F24D1A24900E4B8D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 543B2BB724CE844000E4B8D5 /* Project object */;
 			proxyType = 1;
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		543B2BE824CE979100E4B8D5 /* Embed Frameworks */ = {
+		543B2CA124D1A24900E4B8D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				543B2BE424CE979100E4B8D5 /* logic.framework in Embed Frameworks */,
+				543B2C9E24D1A24900E4B8D5 /* logic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543B2BE324CE979100E4B8D5 /* logic.framework in Frameworks */,
+				543B2C9D24D1A24900E4B8D5 /* logic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +83,7 @@
 				543B2BC124CE844000E4B8D5 /* research_embedded_framework */,
 				543B2BDD24CE979100E4B8D5 /* logic */,
 				543B2BC024CE844000E4B8D5 /* Products */,
+				543B2C9C24D1A24900E4B8D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,13 @@
 			path = logic;
 			sourceTree = "<group>";
 		};
+		543B2C9C24D1A24900E4B8D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -140,12 +148,12 @@
 				543B2BBB24CE844000E4B8D5 /* Sources */,
 				543B2BBC24CE844000E4B8D5 /* Frameworks */,
 				543B2BBD24CE844000E4B8D5 /* Resources */,
-				543B2BE824CE979100E4B8D5 /* Embed Frameworks */,
+				543B2CA124D1A24900E4B8D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				543B2BE224CE979100E4B8D5 /* PBXTargetDependency */,
+				543B2CA024D1A24900E4B8D5 /* PBXTargetDependency */,
 			);
 			name = research_embedded_framework;
 			productName = research_embedded_framework;
@@ -250,10 +258,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		543B2BE224CE979100E4B8D5 /* PBXTargetDependency */ = {
+		543B2CA024D1A24900E4B8D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 543B2BDB24CE979100E4B8D5 /* logic */;
-			targetProxy = 543B2BE124CE979100E4B8D5 /* PBXContainerItemProxy */;
+			targetProxy = 543B2C9F24D1A24900E4B8D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -394,7 +402,6 @@
 		543B2BD424CE844300E4B8D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAH5C4U9W7;
@@ -414,7 +421,6 @@
 		543B2BD524CE844300E4B8D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAH5C4U9W7;

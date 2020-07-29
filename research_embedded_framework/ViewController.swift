@@ -10,14 +10,9 @@ import UIKit
 import logic
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Calculator.plus(vals: 0, 1, 2))
-        
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
